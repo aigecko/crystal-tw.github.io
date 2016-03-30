@@ -1,22 +1,22 @@
-# Local variables
+# 區域變數
 
-Local variables start with lowercase letters. They are declared when you first assign them a value.
+區域變數為小寫字母開頭。當其初次被指派值時被宣告。
 
 ```crystal
 name = "Crystal"
 age = 1
 ```
 
-Their type is inferred from their usage, not only from their initializer. In general, they are just value holders associated with the type that the programmer expects them to have according to their location and usage on the program.
+它們的型別由其用途推測得知，而不只是看初始化的型別。一般而論，它們只是程式設計師期待以程式中的位置及用途決定其型別的數值持有者。
 
-For example, reassigning a variable with a different expression makes it have that expression’s type:
+舉個例，重新指派不同展開式給變數使變數具有該展開式的型別:
 
 ```crystal
 flower = "Tulip"
-# At this point 'flower' is a String
+# 此時 'flower' 是個 String
 
 flower = 1
-# At this point 'flower' is an Int32
+# 此時 'flower' 是個 Int32
 ```
 
-Underscores are allowed at the beginning of a variable name, but these names are reserved for the compiler, so their use is not recommended (and it also makes the code uglier to read).
+底線被允序作為變數名稱的開頭，但是這些名稱是被編譯器所保留，所以不建議如此使用(而且也使得程式碼變得較難看)。
